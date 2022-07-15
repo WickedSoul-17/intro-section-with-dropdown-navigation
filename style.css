@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+    --clr-neutral-1: hsl(0, 0%, 98%);
+    --clr-neutral-2: hsl(0, 0%, 41%);
+    --clr-neutral-3: hsl(0, 0%, 8%);
+
+    --font-size: 18px;
+
+    --font-family: 'Epilogue', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background: var(--clr-neutral-1);
+    font-family: var(--font-family);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .left{
+    display: flex;
+}
+
+header .left nav{
+    margin-left: 50px;
+}
+
+header .left nav > div{
+    padding-left: 15px;
+    color: var(--clr-neutral-2);
+}
+header .left nav > div:hover{
+    color: var(--clr-neutral-3);
+}
+
+header .left nav > a{
+    padding-left: 25px;
+    color: var(--clr-neutral-2);
+    text-decoration: none;
+}
+
+header .left nav > a:hover{
+    color: var(--clr-neutral-3)
+}
+
+header .right >a{
+    text-decoration: none;
+    color: var(--clr-neutral-2);
+}
+
+header .right .login:hover{
+    color: var(--clr-neutral-3);
+}
+
+header .right .navbtn{
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: 2px solid var(--clr-neutral-2);
+    border-radius: 15px;
+}
+
+header .right .navbtn:hover{
+    cursor: pointer;
+    color: var(--clr-neutral-3);
+    border-color: var(--clr-neutral-3);
+}
+
+
+.dropbtn{
+    cursor: pointer;
+}
+
+  .dropdown-1{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: var(--clr-neutral-1);
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 8px;
+  }
+ 
+  .dropdown-content-1 a {
+    color: var(--clr-neutral-2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content-1 a:hover{
+    background-color: var(--clr-neutral-1);
+}
+
+  .dropdown-1:hover .dropdown-content-1{
+    display: block;
+}
+
+.dropdown-2{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content-2 {
+    display: none;
+    position: absolute;
+    background-color: var(--clr-neutral-1);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 8px;
+  }
+
+  .dropdown-content-2 a {
+    color: var(--clr-neutral-2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content-2 a:hover{
+    background-color: var(--clr-neutral-1);
+}
+  
+  .dropdown-2:hover .dropdown-content-2{
+    display: block;
+}
+
+
+.hero{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero .left h1{
+    font-size: 100px;
+}
+
+.hero .left p{
+    max-width: 570px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--font-size);
+    color: var(--clr-neutral-2);
+    line-height: 20px;
+}
+
+.hero .left button{
+    border: 2px solid var(--clr-neutral-3);
+    color: var(--clr-neutral-1);
+    background: var(--clr-neutral-3);
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .left button:hover{
+    color: var(--clr-neutral-3);
+    background-color: var(--clr-neutral-1);
+    border: 2px solid var(--clr-neutral-3);
+}
+
+.hero .left .company{
+    padding-top: 30px;
+}
+
+.hero .left .company img:not(:first-child){
+    padding-left: 50px;
+}
+
+
+.hero .right img{
+    max-width: 400px;
+}
